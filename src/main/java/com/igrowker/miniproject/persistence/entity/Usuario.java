@@ -1,6 +1,5 @@
 package com.igrowker.miniproject.persistence.entity;
 
-import java.math.BigDecimal;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,15 +16,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Destino {
+public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String nombre;
-	private String descripcion;
-	private String tipoActividad;
-	private BigDecimal distancia;
-	private Integer nivelCongestion;
-	private BigDecimal precioEntrada;
+	private String username;
+	private String email;
+	private String password;
 }
